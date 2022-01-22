@@ -12,56 +12,63 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header class="header-container">
-        <div class="container">
+    <header>
+        <div class="header-container">
             <div class="header-nav">
-            <div class="logo">
-                <a href="#/"><img src="./assets/svg/logo.svg" alt="Alexa Rise" class="header-logo-pic"></a>
+                <div class="logo">
+                    <a href="#/"><img src="./assets/svg/logo.svg" alt="Alexa Rise"></a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
+                        <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="lang">
+                    <span class="header-lang lang-activ" id="en">en</span>
+                    <span class="header-op">/</span>
+                    <span class="header-lang" id="ru">ru</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                </div>
             </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
-                    <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
-                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                </ul>
-            </nav>
-            <div class="lang">
-                <span class="header-lang lang-activ">en</span><span class="header-lang">/</span><span class="header-lang">ru</span>
-            </div>
-        </div>
         </div>
     </header>
-    <main class="hero-container">
-        <div class="container">
-            <section class="section-hero">
+    <main>
+        <section class="section-hero">
+            <div class="section-hero-text">
                 <h1 class="intro-title">Alexa Rise</h1>
                 <h4>Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</h4>
                 <button class="button-gold">Hire me</button>
-            </section>
+            </div>
+        </section>  
+        <div class="container">
             <section class="section-skills" id="skills">
                 <div class="section">
                     <h2 class="section-title"><span>Skills</span></h2>
                 </div>
                 <div class="skills-container">
                     <div class="skills">
-                       <img src="./assets/svg/camera.svg" alt="camera">
+                       <img src="./assets/svg/camera.svg" alt="camera" width="62" height="50">
                        <h4>Digital photography</h4>
                        <p>High-quality photos in the studio<br>and on the nature</p>
                     </div>
                     <div class="skills">
-                        <img src="./assets/svg/video.svg" alt="video">
+                        <img src="./assets/svg/video.svg" alt="video" width="60" height="50">
                         <h4>Video shooting</h4>
                         <p>Capture your moments so that<br>they always stay with you</p>
                     </div>
                     <div class="skills">
-                        <img src="./assets/svg/image.svg" alt="image">
+                        <img src="./assets/svg/image.svg" alt="image" width="66" height="50">
                         <h4>Retouch</h4>
                         <p>I strive to make photography<br>surpass reality</p>
                     </div>
                     <div class="skills">
-                        <img src="./assets/svg/mic.svg" alt="mic">
+                        <img src="./assets/svg/mic.svg" alt="mic" width="32" height="50">
                         <h4>Audio</h4>
                         <p>Professional sounds recording<br>for video, advertising, portfolio</p>
                     </div>
@@ -75,7 +82,7 @@
                     <button class="button-transparent">Winter</button>
                     <button class="button-transparent">Spring</button>
                     <button class="button-transparent">Summer</button>
-                    <button class="button-transparent btn-activ">Autumn</button>
+                    <button class="button-transparent btn-activ ">Autumn</button>
                 </div>
                 <div class="flex-autumn">
                     <img src="./assets/img/portfolio-img.jpg" alt="autumn" class="autumn-img">
@@ -94,7 +101,7 @@
                     <div class="bg">
                         <div class="video-player">
                         <button class="play-hover">
-                            <img src="./assets/svg/Play_hover.svg" alt="play">
+                            <img src="./assets/svg/Play_hover.svg" alt="play" class="play">
                         </button>
                         </div>
                     </div>
@@ -106,7 +113,7 @@
                 </div>
                 <div class="price-container">
                     <div class="price">
-                        <h3>Standart</h3>
+                        <h3>Standard</h3>
                         <h4>500 $</h4>
                         <span>One location</span>
                         <span>120 photos in color</span>
@@ -137,7 +144,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="section-contacts" id="contacts">
                 <div class="contacts-container">
                     <div class="cl">
@@ -156,31 +162,29 @@
         </div>
     </main>
     <footer class="footer-container">
-        <div class="container">
-            <div class="footer">
-                <div class="git">
-                    <pre>©    2022   <a href="https://github.com/Veronika2811" class="link">github</a></pre>
-                </div>
-                <div class="rs">
-                    <pre><a href="https://rs.school/js-stage0/" class="link">          Rolling Scopes School</a></pre>
-                </div>
-                <ul class="social">
-                    <li>
-                        <a class="icon" href="#"><img src="./assets/svg/Vector.svg" alt="inst"></a>
-                    </li>
-                    <li>
-                        <a class="icon" href="#"><img src="./assets/svg/Vector1.svg" alt="fb"></a>
-                    </li>
-                    <li>
-                        <a class="icon" href="#"><img src="./assets/svg/Vector2.svg" alt="tw"></a>
-                    </li>
-                    <li>
-                        <a class="icon1" href="#"><img src="./assets/svg/Vector3.svg" alt="pinterest"></a>
-                    </li>
-                </ul>
+        <div class="footer">
+            <div class="git">
+                <pre>©    2022   <a href="https://github.com/Veronika2811" class="link"> github</a></pre>
             </div>
-        </div>
+            <div class="rs">
+                <pre><a href="https://rs.school/js-stage0/" class="link">Rolling Scopes School</a></pre>
+            </div>
+            <ul class="social">
+                <li>
+                    <a class="icon" href="#"><img src="./assets/svg/Vector.svg" alt="inst"></a>
+                </li>
+                <li>
+                    <a class="icon" href="#"><img src="./assets/svg/Vector1.svg" alt="fb"></a>
+                </li>
+                <li>
+                    <a class="icon" href="#"><img src="./assets/svg/Vector2.svg" alt="tw"></a>
+                </li>
+                <li>
+                    <a class="icon1" href="#"><img src="./assets/svg/Vector3.svg" alt="pinterest"></a>
+                </li>
+            </ul>
+        </div>  
     </footer>
-    <script src="index.js"></script> 
+    <script src="index.js"></script>
 </body>
 </html>
