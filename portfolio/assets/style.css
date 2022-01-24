@@ -425,12 +425,12 @@ body {
     max-width: 620px;
     top: 0;
     width: 100%;
-    height: 1024px;
+    height: 100vh;
     z-index: 2;
     padding: 115px 0px 456px 1px;
     overflow-x: hidden;
-    transition: 0.5s;
     padding-top: 129px;
+    transition: all 1s ease-in-out;
   }
 
   .nav-list {
@@ -469,7 +469,7 @@ body {
 
   .nav.open {
     right: 0;
-    transition: 0.5s;
+    transition: all 1s ease-in-out;
   }
 }
 
