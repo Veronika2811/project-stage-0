@@ -1,19 +1,69 @@
-const hamburger = document.querySelector('.hamburger');
-const burger = document.querySelector('.nav'); 
+// hamburger menu start
+const hamburger = document.querySelector('.header__block_hamburger');
+const burger = document.querySelector('.header__block_nav'); 
+
+hamburger.addEventListener('click', toggleMenu);
+
 function toggleMenu() {
     hamburger.classList.toggle('open');
     burger.classList.toggle('open'); 
 };
 
-hamburger.addEventListener('click', toggleMenu);
-
 burger.addEventListener('click', closeMenu);
 
 function closeMenu(event) {
-    if (event.target.classList.contains('nav-link')) {
+    if (event.target.classList.contains('.header__block_nav-link')) {
         hamburger.classList.remove('open');
         burger.classList.remove('open');
     };
 };
 
-console.log('Вёрстка соответствует макету. Ширина экрана 768px +48\n- блок header\n- секция hero +6\n- секция skills +6\n- секция portfolio +6\n- секция video +6\n- секция price +6\n- секция contacts +6\n- блок <footer> +6\nНи на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15\n- нет полосы прокрутки при ширине страницы от 1440рх до 768рх +5\n- нет полосы прокрутки при ширине страницы от 768рх до 480рх +5\n- нет полосы прокрутки при ширине страницы от 480рх до 320рх +5\nНа ширине экрана 768рх и меньше реализовано адаптивное меню +22\nпри ширине страницы 768рх панель навигации скрывается, появляется бургер-иконка +2\nпри нажатии на бургер-иконку справа плавно появляется адаптивное меню, бургер-иконка изменяется на крестик +4\nвысота адаптивного меню занимает всю высоту экрана. При ширине экрана 768-620рх вёрстка меню соответствует макету, когда экран становится уже, меню занимает всю ширину экрана +4\nпри нажатии на крестик адаптивное меню плавно скрывается уезжая за правую часть экрана, крестик превращается в бургер-иконку +4\nбургер-иконка, которая при клике превращается в крестик, создана при помощи css-анимаций без использования изображений +2\nссылки в адаптивном меню работают, обеспечивая плавную прокрутку по якорям +2\nпри клике по ссылке в адаптивном меню адаптивное меню плавно скрывается, крестик превращается в бургер-иконку +4\n- Score: 85/85');
+// hamburger menu end
+
+// lang start
+/*
+import i18Obj from './translate.js';
+
+
+const enLang = document.querySelector('.lang-en');
+const ruLang = document.querySelector('.lang-ru');
+enLang.addEventListener('click', () => { getTpanslate('en')});
+ruLang.addEventListener('click', () => { getTpanslate('ru')});
+*/
+// lang end
+
+
+// portfolio photo start
+
+const portfolioImages = document.querySelectorAll('.section-portfolio__album_photo');
+const portfolioBtns = document.querySelector('.section-portfolio__btn');
+const btnsActiv = document.querySelectorAll('.portfolio__btn_transparent');
+
+
+portfolioBtns.addEventListener('click', changeImage);
+
+function changeImage(event) {
+  if(event.target.dataset.season == "winter") {
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/winter/${index + 1}.jpg`);
+  }
+
+  else if(event.target.dataset.season == "spring") {
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/spring/${index + 1}.jpg`);
+  }
+
+  else if(event.target.dataset.season == "summer") {
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/summer/${index + 1}.jpg`);
+  }
+
+  else if(event.target.dataset.season == "autumn") {
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/autumn/${index + 1}.jpg`);
+  }
+  };
+
+  function btnActiv (event) {
+    if (event.target.classList.contains('.section-portfolio__btn')) {
+        btnsActiv.classList.remove('.section-portfolio__btn_transparent:active');
+        
+    };
+};
+ 
