@@ -1,1 +1,69 @@
-console.log("Score:100/100\n- Вёрстка валидная (10)\n- Вёрстка семантическая (20)\n - header, main, footer\n - шесть элементов section (по количеству секций)\n - только один заголовок h1\n - пять заголовков h2 (количество секций минус одна, у которой заголовок h1)\n - один элемент nav (панель навигации)\n - два списка ul > li > a (панель навигации, ссылки на соцсети)\n - десять кнопок button\n - два инпута: input email и input type tel\n - один элемент textarea\n - три атрибута placeholder\n- Вёрстка соответствует макету (45)\n - блок header\n - секция hero\n - секция skills\n - секция portfolio\n - секция video\n - секция price\n - секция contacts\n - блок footer\n- Требования к css (12)\n - для построения сетки используются флексы\n - при уменьшении масштаба страницы браузера вёрстка размещается по центру, а не сдвигается в сторону\n - фоновый цвет тянется на всю ширину страницы\n - иконки добавлены в формате .svg\n - изображения добавлены в формате .jpg\n - есть favicon\n- Интерактивность, реализуемая через css (20)\n - плавная прокрутка по якорям\n - ссылки в футере ведут на гитхаб автора проекта и на страницу курса https://rs.school/js-stage0/\n - интерактивность включает в себя не только изменение внешнего вида курсора, например, при помощи свойства cursor: pointer, но и другие визуальные эффекты, например, изменение цвета фона или цвета шрифта\n - плавное изменение внешнего вида элемента при наведении и клике не влияющее на соседние элементы");
+// hamburger menu start
+const hamburger = document.querySelector('.header__block_hamburger');
+const burger = document.querySelector('.header__block_nav'); 
+
+hamburger.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    hamburger.classList.toggle('open');
+    burger.classList.toggle('open'); 
+};
+
+burger.addEventListener('click', closeMenu);
+
+function closeMenu(event) {
+    if (event.target.classList.contains('.header__block_nav-link')) {
+        hamburger.classList.remove('open');
+        burger.classList.remove('open');
+    };
+};
+
+// hamburger menu end
+
+// lang start
+/*
+import i18Obj from './translate.js';
+
+
+const enLang = document.querySelector('.lang-en');
+const ruLang = document.querySelector('.lang-ru');
+enLang.addEventListener('click', () => { getTpanslate('en')});
+ruLang.addEventListener('click', () => { getTpanslate('ru')});
+*/
+// lang end
+
+
+// portfolio photo start
+
+const portfolioImages = document.querySelectorAll('.section-portfolio__album_photo');
+const portfolioBtns = document.querySelector('.section-portfolio__btn');
+const btn = document.querySelectorAll('.section-portfolio__btn_transparent');
+
+portfolioBtns.addEventListener('click', changeImage);
+
+function changeImage(event) {
+  if(event.target.dataset.season == "winter") {
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/winter/${index + 1}.jpg`);
+  }
+
+  else if(event.target.dataset.season == "spring") {
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/spring/${index + 1}.jpg`);
+  }
+
+  else if(event.target.dataset.season == "summer") {
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/summer/${index + 1}.jpg`);
+  }
+
+  else if(event.target.dataset.season == "autumn") {
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/autumn/${index + 1}.jpg`);
+  }
+  }
+
+  portfolioBtns.addEventListener('click', function changeBtn(event) {
+    btn.forEach(btn => {
+      btn.classList.remove('active');
+    })
+    event.target.classList.add('active');
+  });
+
+  // portfolio photo end
