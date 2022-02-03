@@ -33,8 +33,8 @@ bgBtns.addEventListener('click', changeImage);
 
 function changeImage(event) {
   if(event.target.dataset.item == "forest") {
-    bgImage.style.backgroundImage = "url('./assets/img/forest.jpg')";
-    audio.src = './assets/audio/solovey.mp3';
+    bgImage.style.backgroundImage = "url('./assets/img/forest.jpeg')";
+    audio.src = './assets/audio/forest.mp3';
     audio.currentTime = 0;
     playAudio(); 
   }
@@ -146,6 +146,10 @@ function updateProgress(e) {
  const {duration, currentTime} = e.srcElement;
  const progressPerсent = (currentTime / duration) * 100;
  progress.style.width = `${progressPerсent}%`
+ if (progressPerсent === 100) {
+  pauseAudio();
+  progress.style.width = 0;
+}
 }
 
 audio.addEventListener('timeupdate', updateProgress);
