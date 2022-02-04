@@ -137,7 +137,7 @@ function hoverBubbleBtnsEffect() {
 
 // play end
 
-// progress bar
+// progress bar start
 
 const progress = document.querySelector('.progress');
 const progressContainer = document.querySelector('.progress__container');
@@ -154,8 +154,9 @@ function updateProgress(e) {
 
 audio.addEventListener('timeupdate', updateProgress);
 
+// progress bar end
 
-// set progress
+// set progress start
 
 function setProgress(e) {
 const width = this.clientWidth;
@@ -165,3 +166,7 @@ audio.currentTime = (clickX / width) * duration;
 }
 
 progressContainer.addEventListener('click', setProgress);
+
+// set progress end
+
+console.log('1. Вёрстка +10\n-есть 10 интерактивных элементов, с которыми пользователи могут взаимодействовать. Изменение внешнего вида самого элемента и состояния курсора при наведении, плавные анимации\n-в футере приложения есть ссылка на гитхаб автора приложения, год создания приложения, логотип курса со ссылкой на курс +5\n2.При кликах по интерактивным элементам меняется изображение +10\n3.При кликах по интерактивным элементам меняется звук +10\n4.Активный в данный момент интерактивный элемент выделяется стилем +10\n5.Кнопка Play/Pause +20\n-есть кнопка Play/Pause, при клике по которой можно запустить или остановить проигрывание звука +10\n-внешний вид и функционал кнопки Play/Pause изменяется в зависимости от того, проигрывается ли в данный момент звук +10\n6.Высокое качество оформления приложения и дополнительный не предусмотренный в задании функционал, улучшающий качество приложения +10(progress-bar, photo, style button)');
