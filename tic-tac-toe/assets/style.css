@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background: #3A1C71; 
+    background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); 
+    background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71);
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 306px;
+    max-height: 306px;
+    gap: 3px;
+}
+
+.game__item {
+    width: 100px;
+    height: 100px;
+    background-color:#fff;
+    border-radius: 25px;
+    opacity: 0.2;
+    color: #000;  
+    font-size: 72px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.game__item:hover {  
+    opacity:0.4;
+}
+
+.game__item_o {
+    background-color: #341965;
+    opacity: 1; 
+}
+
+.game__item_x {
+    background-color: #ff812f;
+    opacity: 1;
+}
