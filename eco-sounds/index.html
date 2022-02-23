@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecosounds</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+    <header class="header">
+            <div class="header__container">
+                <div class="logo nav-item active" data-item="forest"></div>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="nav-item" data-item="solovey">Соловей</li>
+                        <li class="nav-item" data-item="drozd">Дрозд</li>
+                        <li class="nav-item" data-item="zarynka">Малиновка</li>              
+                        <li class="nav-item" data-item="javoronok">Жаворонок</li>
+                        <li class="nav-item" data-item="slavka">Славка</li>
+                    </ul>
+                </nav>
+                <div class="header__hamburger">
+                    <span></span>
+                </div>
+            </div>
+    </header>
+    <main class = "bg-player">
+        <button class = "play" data-play="play_music"><audio class="audio"></audio></button>
+        <div class="progress__container">
+            <div class="progress"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container__github">
+                <span class="copy">©</span>
+                <span class="year">2022</span>
+                <a class="github" href="https://github.com/Veronika2811">github</a>
+            </div>
+            <a href="https://rs.school/js-stage0/" class="footer-container__link"></a>
+        </div>  
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
