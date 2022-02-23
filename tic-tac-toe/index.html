@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="./assets/TicTacToe.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="body">
+    <div class="game__container">
+        <h1 class="header">Tic Tac Toe</h1>
+        <h2 class="current__player">Current player is X</h2>
+        <section class="game">
+            <div class="game__item"></div>
+            <div class="game__item"></div>
+            <div class="game__item"></div>
+            <div class="game__item"></div>
+            <div class="game__item"></div>
+            <div class="game__item"></div>
+            <div class="game__item"></div>
+            <div class="game__item"></div>
+            <div class="game__item"></div>
+        </section>
+        <div class="score">
+            <p>X wins:<span class="victory__X">0</span></p>
+            <p>Draw:<span class="draw">0</span></p>
+            <p>O wins:<span class="victory__O">0</span></p>
+        </div>
+        <div class="btn">
+            <button class="btn__reset">Reset</button>
+            <button class="btn__result">Result</button>
+        </div>
+        <div class="setting">
+            <div class="switch"></div>
+            <div class = "play" data-play="play_music"><audio class="audio"></audio></div>
+        </div>
+        <div class="result__background">
+            <div class="result__window">
+            <p class="result__window-name">Game results</p>
+            <ol class="result__saved"></ol>
+            <button class="result__btn-close">Close</button>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="overlay"></div>
+            <div class="modal__window">
+                <div class="content"></div>
+                <div class="modal__btn-close">Start</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div>
+            <span class="copy">©</span>
+            <span class="year">2022</span>
+            <a class="github" href="https://github.com/Veronika2811">github</a>
+        </div>
+        <a href="https://rs.school/js-stage0/" class="footer-container__link"></a>
+    </footer>
+    <script type="module" src="./index.js" defer></script>
+</body>
+</html>
