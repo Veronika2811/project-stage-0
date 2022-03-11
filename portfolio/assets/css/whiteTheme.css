@@ -1,0 +1,218 @@
+.body-white {
+    background: #fff;
+    color: #000;
+}
+
+/* header start */
+
+.header-white {
+    background: url('../img/bg_hero-white.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.logo-white {
+    background-image: url('../svg/logo-black.svg');
+    width: 50px;
+    height: 50px;
+}
+
+.logo-white:hover {
+    filter: invert(73%) sepia(41%) saturate(249%) hue-rotate(7deg) brightness(88%) contrast(89%);
+}
+
+.burger-white:hover {
+    filter: invert(73%) sepia(41%) saturate(249%) hue-rotate(7deg) brightness(88%) contrast(89%);
+}
+
+.menu__link-white {
+    color: #000;
+}
+
+.menu__link-white:hover {
+    color: #BDAE82;
+}
+
+.lang-white {
+    color: #000;
+}
+
+.lang__item-white.active {
+    color: #fff;
+}
+  
+.lang__item-white:hover {
+    color: #fff;
+}
+
+.header__switch-white {
+    background-image: url('../svg/moon.svg');
+    width: 41px;
+    height: 40px;
+}
+
+.header__switch-white:hover {
+    filter: invert(73%) sepia(41%) saturate(249%) hue-rotate(7deg) brightness(88%) contrast(89%);
+}
+
+/* hero start */
+
+.hero-white {
+    background-image: url('../img/bg_hero-white.jpg');
+}
+
+.hero__title-white {
+    font-family: 'Merriweather';
+    font-size: 60px;
+    margin: 0;
+    padding-bottom: 38px;
+}
+
+.btn-white {
+    background-color: #fff;
+}
+
+.btn-white:hover {
+    color: #bdae82;
+    background-color: #000;
+}
+
+/* skills start */
+
+.section__title-white {
+    background-image: linear-gradient(to top, #fff 39px, #000 39px, #000 41px, #fff 41px);  
+}
+
+.name-white {
+    background: #fff;
+    color: #000;
+}
+
+/* portfolio start */
+
+.btn__filter-white {
+    background-color: #bdae82;
+    color: #000;
+}
+
+.btn__filter-white:hover {
+    color: #bdae82;
+    background: #000;
+}
+
+.bubbly-button-white:before{
+    display: none;
+    top: -75%;
+    background-image:  
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%),
+      radial-gradient(circle,  transparent 20%, var(--black-color) 20%, transparent 30%),
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%), 
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%),
+      radial-gradient(circle,  transparent 10%, var(--black-color) 15%, transparent 20%),
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%),
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%),
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%),
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+    background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
+}
+
+.bubbly-button-white:after{
+    display: none;
+    bottom: -75%;
+    background-image:  
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%), 
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%),
+      radial-gradient(circle,  transparent 10%, var(--black-color) 15%, transparent 20%),
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%),
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%),
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%),
+      radial-gradient(circle, var(--black-color) 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+}
+
+.bubbly-button-white.active {
+    background-color: #000;
+    box-shadow: 0 2px 25px #000;
+    color: #bdae82;
+    border: none;
+}
+
+/* price start */
+
+.btn-price-white {
+    background-color: #BDAE82;
+}
+
+.btn-price-white:hover {
+    background-color: #000;
+    color: #BDAE82;
+}
+
+/* contacts start */
+
+.contacts-white {
+    background: url('../img/contacts-white.jpg');
+}
+
+.contact__title-white {
+    color: #000;
+}
+
+.contact__input-white {
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.contact__textarea-white {
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.contact__input-white::placeholder,
+.contact__textarea-white::placeholder {
+  color: #000;
+  outline: none;
+}
+
+/* footer start */
+
+.github__item-white,
+.rsschool__link-white {
+  color: #000;
+}
+
+.socials__link-white:hover {
+    filter: invert(73%) sepia(41%) saturate(249%) hue-rotate(7deg) brightness(88%) contrast(89%);
+}
+
+.social__link-inst-white {
+    background-image: url('../svg/inst-black.svg');
+}
+
+.social__link-fb-white {
+    background-image: url('../svg/fb-black.svg');
+}
+
+.social__link-tw-white {
+    background-image: url('../svg/tw-black.svg');
+}
+
+.social__link-pn-white {
+    background-image: url('../svg/pinterest-black.svg');
+}
+
+@media (max-width: 768px) {
+    .header-white {
+        background-image: url('../img/bg_hero-white_ad.jpg');
+    }
+
+    .hero-white {
+        background-image: url('../img/bg_hero-white_ad.jpg');
+    }
+
+    .contacts-white {
+        background: url('../img/contacts-white_ad.jpg');
+    }
+}
