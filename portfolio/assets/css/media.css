@@ -1,0 +1,333 @@
+@media (max-width: 768px) {
+    html,
+    .body {
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* header start */
+
+    .header {
+        background-image: url('../img/bg_hero_ad.jpg');
+        justify-content: space-between;
+        padding-left: 44px;
+        padding-right: 40px;
+    }
+
+    .header__container {
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 24px;
+    }
+
+    .lang {
+        margin-left: auto;
+    }
+
+    .header__switch {
+        margin-right: 30px;
+        margin-left: 31px;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        height: 50px;
+        width: 50px;
+        top: 20px;
+        z-index: 3;
+        transition: 0.3s;
+    }
+    
+    .burger:hover {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%);
+        cursor: pointer;
+    }
+    
+    .burger:before,
+    .burger:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+    
+    .burger-white:before,
+    .burger-white:after {
+        background-color: #000;
+    }
+    
+    .burger__line {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 3px;
+        top: 24px;
+        transition: 0.3s;
+    }
+    
+    .burger__line-white {
+        background-color: #000;
+    }
+    
+    .burger:after {
+        top: 11px;
+    }
+    
+    .burger:before {
+        bottom: 11px;
+    }
+    
+    .menu {
+        display: block;
+        position:absolute;
+        background-color: #000;
+        right: -620px;
+        max-width: 620px;
+        top: 0;
+        width: 100%;
+        height: 1024px;
+        z-index: 2;
+        padding: 115px 0px 456px 1px;
+        overflow-x: hidden;
+        transition: all 1s ease-in-out;
+    }
+    
+    .menu-white {
+        background-color: #fff;
+    }
+    
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        align-items: flex-start;
+        z-index: 3;
+        gap: 15px;
+        width: 150px;
+        height: 429px;
+        padding-left: 110px;
+    }
+    
+    .menu__link {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 72.55px;
+    }
+      
+    .menu__link-white {
+        color: #000;
+    }
+
+    .menu__link-white:hover {
+        color: #000;
+    }
+    
+    .burger.open::before{
+        transform: rotate(45deg);
+        top: 20px;
+    }
+    
+    .burger.open::after{
+        transform: rotate(-45deg);
+        top: 20px;
+    }
+    
+    .burger.open span {
+        opacity: 0;
+    }
+    
+    .menu.open {
+        right: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    /* hero start */
+
+    .hero {
+        background-image: url('../img/bg_hero_ad.jpg');
+        height: 500px;
+    }
+
+    .hero__content {
+        max-width: 390px;
+        padding-top: 92px;
+        padding-left: 60px;
+    }
+
+    .hero__title {
+        font-family: 'Merriweather';
+        font-weight: 400;
+        font-size: 32px;
+        padding-bottom: 32px;
+    }
+
+    .hero__description {
+        margin: 0;
+        line-height: 24.2px;
+        padding-bottom: 60px;
+        max-width: 390px;
+    }
+
+    .hero__description {
+        max-width: 90%;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 0 64px 55px 60px;
+    }
+
+    /* skills start */
+
+    .skills {
+        padding-bottom: 47px;
+    }
+    
+    .section {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .section h2 {
+        font-size: 32px;
+        width: 360px;
+    }
+
+    .skills__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 36px;
+    }
+
+    .skills__item {
+        max-width: 300px;
+        height: 224px;
+        margin-right: 0;
+    }
+
+    .skills__caption {
+        margin: 0;
+        padding-top: 37px;
+        padding-bottom: 30px;
+    }
+
+    .skills__description {
+        margin: 0;
+        line-height: 21.78px;
+    }
+
+    /* video start */
+
+    .video {
+        margin: 0 -64px 0 -60px;
+    }
+     
+    .controls {
+        position: relative;
+        padding-top: 12px;
+        justify-content: space-between;
+    }
+    
+    .progress {
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 8px;
+    }
+    
+    .volume {
+        width: 20%;
+        margin-right: 10px;
+        height: 7px;
+    }
+    
+    .play-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .play-btn {
+        width: 75px;
+        height: 75px;
+    }
+
+    /* price start */
+
+    .price__card {
+        width: 415px;
+        margin-bottom: 27px;
+    }
+
+    /* contacts start */
+
+    .contacts {
+        background: url('../img/contacts_ad.jpg');
+        height: 600px;
+        text-align: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .contact__title {
+        font-size: 32px;
+    }
+
+    /* footer start */
+
+    .footer-container {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .github {
+        gap: 5px;
+    }
+
+    .rsschool {
+        margin-top: -10px;
+    }
+
+    .social {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 475px) {
+    .portfolio__image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 455px) {
+    .header {
+        padding: 0 10px;
+    }
+
+    .header__container {
+        padding: 0;
+    }
+
+    .hero__content {
+        padding-left: 25px;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 335px) {
+    .header__switch {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
