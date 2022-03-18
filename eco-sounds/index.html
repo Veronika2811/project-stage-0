@@ -10,39 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
 </head>
-    <header class="header">
-            <div class="header__container">
-                <div class="logo nav-item active" data-item="forest"></div>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="nav-item" data-item="solovey">Соловей</li>
-                        <li class="nav-item" data-item="drozd">Дрозд</li>
-                        <li class="nav-item" data-item="zarynka">Малиновка</li>              
-                        <li class="nav-item" data-item="javoronok">Жаворонок</li>
-                        <li class="nav-item" data-item="slavka">Славка</li>
-                    </ul>
-                </nav>
-                <div class="header__hamburger">
-                    <span></span>
-                </div>
+<body class="body">
+    <header class="header__container">
+        <div class="logo menu__item active" data-item="forest"></div>
+            <nav class="menu">
+                <ul class="menu__nav-list">
+                    <li class="menu__item" data-item="solovey">Соловей</li>
+                    <li class="menu__item" data-item="drozd">Дрозд</li>
+                    <li class="menu__item" data-item="zarynka">Малиновка</li>              
+                    <li class="menu__item" data-item="javoronok">Жаворонок</li>
+                    <li class="menu__item" data-item="slavka">Славка</li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
             </div>
     </header>
-    <main class = "bg-player">
-        <button class = "play" data-play="play_music"><audio class="audio"></audio></button>
+    <main class = "player__image">
+        <button class = "btn__play" data-play="play_music"><audio class="audio"></audio></button>
         <div class="progress__container">
             <div class="progress"></div>
         </div>
     </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-container__github">
-                <span class="copy">©</span>
-                <span class="year">2022</span>
-                <a class="github" href="https://github.com/Veronika2811">github</a>
-            </div>
-            <a href="https://rs.school/js-stage0/" class="footer-container__link"></a>
-        </div>  
+    <footer class="footer-container">
+        <div class="footer-container__github">
+            <span class="copy">©</span>
+            <span class="year">2022</span>
+            <a class="github" href="https://github.com/Veronika2811">github</a>
+        </div>
+        <a href="https://rs.school/js-stage0/" class="footer-container__link"></a>
     </footer>
     <script src="./index.js"></script>
 </body>
