@@ -1,0 +1,22 @@
+@media(max-width: 490px) {
+    .body {
+      padding: 10px;
+    }
+
+    .game {
+        max-width: 300px;
+        max-height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .game__item {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn__reset, .btn__result {
+        width: 130px;
+        height: 60px;
+    }
+}

@@ -6,6 +6,7 @@ const itemsNames = {
     o: 'O',
     x: 'X'
 }
+
 let activePlayer = itemsNames.x;
 
 const caseOfVictory = [
@@ -107,7 +108,7 @@ modalBtnClose.addEventListener('click', closeModal)
 
 function closeModal() {
     modalResultWindow.style.display = 'none';
-    location. reload(); // обновления браузера
+    location. reload(); 
 }
 
 // result in game start
@@ -178,7 +179,7 @@ function getLocalStorage() {
     }
     leaderBoard(tableResultArr);
     if (localStorage.getItem('theme') === 'pink') {
-        whiteTheme.forEach((elem) => elem.classList.add('pink'));
+        pinkTheme.forEach((elem) => elem.classList.add('pink'));
     }
   }
 
@@ -189,46 +190,9 @@ window.addEventListener('load', getLocalStorage)
 let theme = localStorage.getItem('theme') || 'blue';
 
 const switchTheme = document.querySelector('.switch');
-const whiteTheme = document.querySelectorAll('body,.switch,.header,.result__window-name,.result__btn-close,.content,.modal__btn-close,.github,.footer-container__link,.switch:hover');
+const pinkTheme = document.querySelectorAll('body,.switch,.header,.result__window-name,.result__btn-close,.content,.modal__btn-close,.github,.footer-container__link,.switch:hover');
 
 switchTheme.addEventListener('click', function clickTheme() {
     theme === 'blue' ? theme = 'pink' : theme = 'blue';
-    whiteTheme.forEach((elem) => elem.classList.toggle('pink'));
+    pinkTheme.forEach((elem) => elem.classList.toggle('pink'));
 });
-
-// music start
-
-const playBtn = document.querySelector('.play');
-
-const songs = ["music"];
-
-
-
-function loadSong(song) {
-  audio.src = `./assets/audio/music.mp3`;
-};
-
-loadSong(songs);
-
-function playAudioPlayer() {
-  audio.classList.add('play')
-  playBtn.style.backgroundImage = "url('./assets/svg/pause.svg')";
-  audio.play();
-}
-
-function pauseAudio() {
-  audio.classList.remove('play')
-  playBtn.style.backgroundImage = "url('./assets/svg/play.svg')";
-  audio.pause();
-}
-
-playBtn.addEventListener('click', (changeAudio) => {
-  const isPlaying = audio.classList.contains('play')
- if(isPlaying) {
-   pauseAudio()
- } else {
-    playAudioPlayer()
- }
-});
-
-console.log('-Реализован интерфейс игры +5;\n-В футере приложения есть ссылка на гитхаб автора приложения, год создания приложения, логотип курса со ссылкой на курс +5;\n-При кликах по игровому полю по очереди отображаются крестики и нолики. Первая фигура всегда крестик +10;\n-Игра завершается, когда три фигуры выстроились в ряд по вертикали, горизонтали или диагонали +10;\n-По окончанию игры выводится её результат - выигравшая фигура и количество ходов от начала игры до её завершения +10;\n-Результаты последних 10 игр сохраняются в local storage. Есть таблица рекордов, в которой отображаются результаты предыдущих 10 игр +10;\n-Звуки +10;\n-Очень высокое качество оформления приложения и дополнительный не предусмотренный в задании функционал, улучшающий качество приложения(смена темы, player +10)\nScore: 70/70');
