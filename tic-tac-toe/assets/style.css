@@ -15,17 +15,6 @@
   color: #fff;
 }
 
-.body.pink {
-  background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71);
-  color: #000;
-}
-
-@media(max-width: 365px) {
-  .body {
-    padding: 0;
-  }
-}
-
 .game__container {
   display: flex;
   flex-direction: column;
@@ -36,10 +25,6 @@
   color: #065535;
   font-weight: 900;
   user-select: none;
-}
-
-.header.pink {
-  color: #3A1C71;
 }
 
 .current__player {
@@ -54,13 +39,6 @@
   max-width: 306px;
   max-height: 306px;
   gap: 3px;
-}
-
-@media(max-width: 365px) {
-  .game {
-    max-width: 300px;
-    max-height: 300px;
-  }
 }
 
 .game__item {
@@ -78,13 +56,6 @@
   transition: 0.3s;
   user-select: none;
   cursor: pointer;
-}
-
-@media(max-width: 365px) {
-  .game__item {
-    width: 98px;
-    height: 98px;
-  }
 }
 
 .game__item:hover {  
@@ -148,32 +119,6 @@
   cursor: pointer;
 }
 
-.switch.pink:hover {
-  filter: invert(100%) sepia(100%) saturate(7500%) hue-rotate(66deg) brightness(88%) contrast(115%);
-  cursor: pointer;
-}
-
-.switch.pink {
-  background-image: url('./svg/sun.svg');
-  width: 45px;
-  height: 45px;
-  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(205deg) brightness(100%) contrast(100%);
-}
-
-.play:hover {
-  filter: invert(100%) sepia(100%) saturate(7500%) hue-rotate(66deg) brightness(88%) contrast(115%);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.play {
-  background-image: url('./svg/play.svg');
-  background-size: 100%;
-  width: 45px;
-  height: 45px;
-  transition: 0.3s;
-}
-
 /* result window open */
 
 .result__background {
@@ -212,11 +157,6 @@
   user-select: none;
 }
 
-.result__window-name.pink {
-  color: #3A1C71;
-  
-}
-
 .result__saved{
   padding-left: 20px;
   user-select: none;
@@ -234,10 +174,6 @@
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.result__btn-close.pink {
-  background: #D76D77;
 }
 
 .result__btn-close:hover {
@@ -292,10 +228,6 @@
   user-select: none;
 }
 
-.content.pink {
-  color: #3A1C71;
-}
-
 .modal__btn-close {
   display: flex;
   justify-content: center;
@@ -310,10 +242,6 @@
   border-radius:7px;
   color:white;
   margin-bottom: 10px;
-}
-
-.modal__btn-close.pink {
-  background-color: #D76D77;
 }
 
 .modal__btn-close:hover {
@@ -344,19 +272,11 @@
   padding: 0 10px;
   
 }
-
-.github.pink {
-  color: #000;
-}
   
 .github:hover {
   color: #065535;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.github.pink:hover {
-  color: #D76D77;
 }
   
 .footer-container__link {
@@ -366,14 +286,6 @@
   width: 135px;
   height: 50px;
   transition: 0.3s;
-}
-
-.footer-container__link.pink {
-  filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(293deg) brightness(102%) contrast(105%);
-}
-
-.footer-container__link.pink:hover {
-  filter: invert(59%) sepia(34%) saturate(2432%) hue-rotate(312deg) brightness(95%) contrast(76%);
 }
 
 .footer-container__link:hover {

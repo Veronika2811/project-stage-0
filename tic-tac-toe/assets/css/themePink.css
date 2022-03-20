@@ -1,0 +1,52 @@
+.body.pink {
+    background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71);
+    color: #000;
+}
+
+.header.pink {
+    color: #3A1C71;
+}
+  
+.switch.pink {
+    background-image: url('./svg/sun.svg');
+    width: 45px;
+    height: 45px;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(205deg) brightness(100%) contrast(100%);
+}
+
+.switch.pink:hover {
+    filter: invert(100%) sepia(100%) saturate(7500%) hue-rotate(66deg) brightness(88%) contrast(115%);
+    cursor: pointer;
+}
+
+.result__window-name.pink {
+    color: #3A1C71;
+}
+
+.result__btn-close.pink {
+    background: #D76D77;
+}
+
+.content.pink {
+    color: #3A1C71;
+}
+
+.modal__btn-close.pink {
+    background-color: #D76D77;
+}
+
+.github.pink {
+    color: #000;
+}
+
+.github.pink:hover {
+    color: #D76D77;
+}
+
+.footer-container__link.pink {
+    filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(293deg) brightness(102%) contrast(105%);
+}
+  
+.footer-container__link.pink:hover {
+    filter: invert(59%) sepia(34%) saturate(2432%) hue-rotate(312deg) brightness(95%) contrast(76%);
+}
