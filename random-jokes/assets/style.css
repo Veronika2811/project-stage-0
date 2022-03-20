@@ -27,7 +27,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 80%;
 }
 
 .moon {
@@ -46,7 +46,9 @@
 .clock {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
 }
 
 .time {
@@ -68,7 +70,7 @@
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
   border-radius: 10px;
-  width: 60%;
+  width: 80%;
   background-color:rgba(100, 100, 100, 0.3);
   margin-top: 2%;
   animation: wave 3s linear infinite;
@@ -144,7 +146,7 @@
 .btn__play,
 .btn__next {
 cursor: pointer;
-transition: 0.3s;
+transition: 0.5s;
 }
 
 .btn__prev:hover,
@@ -164,7 +166,8 @@ transition: 0.3s;
 	user-select: none;
 }
 
-.btn:before, .btn:after {
+.btn:before, 
+.btn:after {
 	content: '';
 	position: absolute;	
 	transition: inherit;
@@ -173,7 +176,7 @@ transition: 0.3s;
 
 .btn:hover {
 	color: #133251;
-	transition-delay: .5s;
+	transition-delay: 0.5s;
 }
 
 .btn:hover:before {
@@ -215,8 +218,7 @@ transition: 0.3s;
 .footer-container {
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 40px);
-  margin: 0 auto;
+  width: 100%;
   font-size: 20px;
   padding: 10px;
 }
