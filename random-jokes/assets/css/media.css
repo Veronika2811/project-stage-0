@@ -1,0 +1,54 @@
+@media(max-width: 745px) {
+    .header {
+        width: 90%;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media(max-width: 640px) {
+    .quote {
+        font-size: 20px;
+    }
+
+    .author {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 410px) {
+    .moon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .time {
+        font-size: 20px;
+    }
+
+    .date, 
+    .month,
+    .year,
+    .today {
+        font-size: 15px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .buttons__play {
+        justify-content: center;
+    }
+
+    .footer-container {
+        font-size: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
